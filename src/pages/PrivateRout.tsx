@@ -1,10 +1,14 @@
 import React, { useContext } from "react";
-import { Route } from "react-router-dom";
+import {Navigate } from "react-router-dom";
 import { UserContext } from "../Store";
+import Desktop from "./Desktop";
 
 const PrivateRout = () => {
   const { loggedIn } = useContext(UserContext);
-  return <Route />;
+  if(!loggedIn){
+    return <Navigate to="/" />;
+  }
+  return<Desktop/>
 };
 
 export default PrivateRout;

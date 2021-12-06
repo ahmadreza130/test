@@ -3,11 +3,11 @@ import React, { useState, createContext, ReactNode, useEffect } from "react";
 interface Props {
   children: ReactNode;
 }
-interface UserType {
+export interface UserType {
   email: string;
   password: string;
   loggedIn: boolean;
-  posts?: { sender: UserType; text?: string; media?: Object }[];
+  posts?: { sender: string; text?: string; pic?:string }[];
 }
 const initialUser: UserType = {
   email: "",
