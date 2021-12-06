@@ -7,7 +7,7 @@ export interface UserType {
   email: string;
   password: string;
   loggedIn: boolean;
-  posts?: { sender: string; text?: string; pic?:string }[];
+  posts?: { sender: string; text?: string; pic?: string }[];
 }
 const initialUser: UserType = {
   email: "",

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { UserContext, SetUserContext } from "../../Store";
-
+import { AiFillPicture } from "react-icons/ai";
 export interface PostType {
   sender: string;
   text?: string;
@@ -15,27 +15,38 @@ const SendPost = () => {
   const send = () => {
     if (post.pic || post.text) {
       const posts = user.posts;
-      posts.push(post)
-      setUser({ ...user, posts: posts });
+      setUser({ ...user, posts: [...posts, post] });
     }
   };
   return (
     <div>
-      <input
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setPost({ ...post, text: e.target.value })
-        }
-        type="text"
-        placeholder="...چیزی بنویس"
-      />
-      <div>
+      <div id="sendPostDiv">
+        <h6>{user.email}</h6>
+
+        <br />
         <input
-          onChange={(e) => {
-            setPost({ ...post, pic: URL.createObjectURL(e.target.files[0]) });
-          }}
-          type="file"
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setPost({ ...post, text: e.target.value })
+          }
+          type="text"
+          placeholder="&#9997; چیزی بنویس ..."
         />
-        <button onClick={send}>ارسال</button>
+        <div id="butDiv">
+          <label id="fileInput">
+            <input
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                setPost({
+                  ...post,
+                  pic: URL.createObjectURL(e.target.files[0]),
+                });
+              }}
+              type="file"
+            />
+            <AiFillPicture /> photo
+          </label>
+
+          <button onClick={send}>ارسال</button>
+        </div>
       </div>
     </div>
   );

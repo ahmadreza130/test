@@ -19,6 +19,7 @@ const SignUp: React.FC = () => {
         email: inputValues.email,
         password: inputValues.password,
         loggedIn: false,
+        posts:[]
       });
       navigate("/", { replace: true });
     } else {

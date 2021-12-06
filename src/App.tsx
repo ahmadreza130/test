@@ -3,12 +3,11 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
-import Desktop from "./pages/Desktop";
 import PrivateRout from "./pages/PrivateRout";
  
 function App() {
   return (
-    <div>
+    <div id="wrap">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
