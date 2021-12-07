@@ -34,12 +34,14 @@ const SignUp: React.FC = () => {
         <br />
         <Input
           type="email"
+          placeholder="Email"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setInputValues({ ...inputValues, email: e.target.value })
           }
         />
         <br />
         <Input
+          placeholder="password"
           type="password"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setInputValues({ ...inputValues, password: e.target.value })
@@ -52,7 +54,7 @@ const SignUp: React.FC = () => {
         <br />
         عضو هستم
         <br />
-        <Button className="  bg-light">
+        <Button className="  bg-white">
           <Link className="lnk " to="/">
             ورود
           </Link>

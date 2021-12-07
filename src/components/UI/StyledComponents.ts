@@ -16,5 +16,6 @@ export const Input = styled.input`
   width: 300px;
   height: 35px;
   box-shadow: 100px;
+
 `;
 

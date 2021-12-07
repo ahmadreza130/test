@@ -1,12 +1,18 @@
 $lightBlue: rgb(37, 150, 190);
 .border {
-  border: 1px solid rgb(209, 209, 209);
 }
-.body{
-  background-color: rgb(59, 187, 138)
+.body {
+  background-color: rgb(59, 187, 138);
+}
+.profile {
+  width: 50;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 25px;
+  align-self: center;
 }
 #signForm {
-  @extend .border;
+  background-color: white;
   max-width: fit-content;
   position: absolute;
   top: 50%;
@@ -30,34 +36,47 @@ $lightBlue: rgb(37, 150, 190);
   }
 }
 #logoutdiv {
-  @extend .border;
+  background-color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(231, 228, 228, 0.383) 40%,
+      rgb(255, 255, 255) 40%
+    ),
+    url("./assets/test3.jpg");
   max-width: fit-content;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
   float: right;
-  margin: 60px 150px;
+  margin: 60px 20px;
+  margin-right: 200px;
+  div {
+    width: 250px;
+  }
+  img {
+    @extend .profile;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
   button {
+    margin: 0;
     color: $lightBlue;
     background: none;
     border: none;
   }
 }
 #sendPostDiv {
-  @extend .border;
   border-radius: 20px;
   max-width: fit-content;
   padding: 30px;
   padding-bottom: 10px;
   float: right;
   margin-top: 60px;
-  background: linear-gradient(
-    to top,
-    rgb(235, 249, 253),
-    rgb(233, 246, 251) 4rem,
-    transparent 1rem,
-    transparent 100%
-  );
+
+  background: linear-gradient(to top, rgb(235, 249, 253) 38%, white 38%);
+
   h6 {
     float: right;
     display: inline;
@@ -85,7 +104,7 @@ $lightBlue: rgb(37, 150, 190);
     }
   }
   button {
-    @extend .border;
+    border: 1px solid;
     border-color: $lightBlue;
     border-radius: 10px;
     float: left;
@@ -97,17 +116,95 @@ $lightBlue: rgb(37, 150, 190);
   }
 }
 #pstDiv {
+  background-color: white;
+
   @extend .border;
   border-radius: 20px;
   display: block;
   max-width: fit-content;
-  margin-left: 480px;
+  margin-left: 500px;
   padding: 30px;
   margin-top: 70px;
   float: left;
   text-align: right;
+  div{
+    width: 600px;
+  }
   img {
     width: 600px;
     border-radius: 20px;
+  }
+}
+#more {
+  position: absolute;
+  text-align: center;
+  float: right;
+  left: 1200px;
+  top: 270px;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: fit-content;
+  padding-bottom: 0;
+  padding-right: 20px;
+  img {
+    @extend .profile;
+    float: right;
+    margin: 0;
+  }
+  div {
+    margin-top: 50px;
+  }
+  p,
+  h6[id="name"] {
+    display: block;
+    max-width: fit-content;
+    position: relative;
+    margin-left:60px;
+  }
+
+  button {
+    position: relative;
+    color: $lightBlue;
+    float: left;
+    border: 1px solid $lightBlue;
+    background: white;
+    border-radius: 10px;
+    top: -50px;
+    left: -30px;
+  }
+  #x{
+    position: relative;
+    left: 50px;
+    top: -5px;
+    border: none;
+  }
+}
+#hashtag{
+  position: absolute;
+  width: fit-content;
+  background: white;
+  top: 60px;
+  left: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  
+  button{
+    background: none;
+    border: none;
+    color: $lightBlue;
+    margin-top: -12px;
+  }
+  p{
+    margin: 0;
+  }
+  .hash{
+    margin: 5px 0;
+    p{
+      margin-right: 10px;
+      background:rgb(235, 249, 253);
+      border-radius: 5px;
+      padding: 3px;
+    }
   }
 }

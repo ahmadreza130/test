@@ -10,7 +10,7 @@ const Post: React.FC<Props> = ({ post }) => {
       <div >
         <p>{sender}</p>
         <p>{text ? text : false}</p>
-        {pic ? <img src={pic} alt="pic" /> : false}
+        {pic ? <img  src={pic} alt="none" /> : false}
       </div>
     </div>
   );

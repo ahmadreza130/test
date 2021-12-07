@@ -36,6 +36,7 @@ const Login: React.FC = () => {
         <h3 className="mb-5">ورود</h3>
         <br />
         <Input
+          placeholder="Email"
           type="email"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setInputValues({ ...inputValues, email: e.target.value })
@@ -43,6 +44,7 @@ const Login: React.FC = () => {
         />
         <br/>
         <Input
+          placeholder="password"
           type="password"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setInputValues({ ...inputValues, password: e.target.value })
@@ -53,7 +55,7 @@ const Login: React.FC = () => {
         <br/>
         عضو نیستم
         <br/>
-        <Button className="bg-light">
+        <Button className="bg-white">
           <Link className="lnk" to="/signup">ثبت نام</Link>
         </Button>
       </form>
