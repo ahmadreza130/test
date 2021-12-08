@@ -13,19 +13,24 @@ const Desktop = () => {
   };
   return (
     <div>
-      <div id="logoutdiv">
-        <div>
-          <img src={image} alt="none" />
-          <p>{user.email}</p>
-          <p>designer</p>
-          <button onClick={logOut}>Log Out</button>
+      <div>
+        <div id="logoutdiv">
+          <div>
+            <img src={image} alt="none" />
+            <p>{user.email}</p>
+            <p>designer</p>
+            <button onClick={logOut}>Log Out</button>
+          </div>
         </div>
       </div>
 
       <SendPost />
-      {user.posts
-        ? user.posts.map((p) => <Post key={p.text} post={p} />)
-        : false}
+      <div id="posts">
+        {user.posts
+          ? user.posts.map((p) => <Post key={p.text} post={p} />)
+          : false}
+      </div>
+
       <More />
       <div id="hashtag">
         <div className="d-flex">
@@ -42,10 +47,10 @@ const Desktop = () => {
         </div>
         <div className="d-flex hash">
           <p>#userinterface</p>
-          
+
           <p>#digital</p>
         </div>
-        <div className="d-flex hash" >
+        <div className="d-flex hash">
           <p>#ux</p>
           <p>#freelace</p>
         </div>
