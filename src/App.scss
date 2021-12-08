@@ -115,17 +115,18 @@ $lightBlue: rgb(37, 150, 190);
     width: 70px;
   }
 }
+#posts{
+  position:absolute;
+  top: 250px;
+  left: 500px;
+}
 #pstDiv {
   background-color: white;
-
+margin-top: 20px;
   @extend .border;
   border-radius: 20px;
-  display: block;
   max-width: fit-content;
-  margin-left: 500px;
   padding: 30px;
-  margin-top: 70px;
-  float: left;
   text-align: right;
   div{
     width: 600px;
@@ -185,7 +186,7 @@ $lightBlue: rgb(37, 150, 190);
   width: fit-content;
   background: white;
   top: 60px;
-  left: 250px;
+  left: 230px;
   padding: 20px;
   border-radius: 20px;
   
