@@ -48,7 +48,7 @@ $lightBlue: rgb(37, 150, 190);
   border-radius: 20px;
   text-align: center;
   float: right;
-  margin: 60px 20px;
+  margin-top: 60px;
   margin-right: 200px;
   div {
     width: 250px;
@@ -74,7 +74,7 @@ $lightBlue: rgb(37, 150, 190);
   padding-bottom: 10px;
   float: right;
   margin-top: 60px;
-
+  margin-right: 15px;
   background: linear-gradient(to top, rgb(235, 249, 253) 38%, white 38%);
 
   h6 {
@@ -115,20 +115,20 @@ $lightBlue: rgb(37, 150, 190);
     width: 70px;
   }
 }
-#posts{
-  position:absolute;
+#posts {
+  position: absolute;
   top: 250px;
   left: 500px;
 }
 #pstDiv {
   background-color: white;
-margin-top: 20px;
+  margin-top: 20px;
   @extend .border;
   border-radius: 20px;
   max-width: fit-content;
   padding: 30px;
   text-align: right;
-  div{
+  div {
     width: 600px;
   }
   img {
@@ -161,7 +161,7 @@ margin-top: 20px;
     display: block;
     max-width: fit-content;
     position: relative;
-    margin-left:60px;
+    margin-left: 60px;
   }
 
   button {
@@ -174,14 +174,14 @@ margin-top: 20px;
     top: -50px;
     left: -30px;
   }
-  #x{
+  #x {
     position: relative;
     left: 50px;
     top: -5px;
     border: none;
   }
 }
-#hashtag{
+#hashtag {
   position: absolute;
   width: fit-content;
   background: white;
@@ -189,21 +189,21 @@ margin-top: 20px;
   left: 230px;
   padding: 20px;
   border-radius: 20px;
-  
-  button{
+
+  button {
     background: none;
     border: none;
     color: $lightBlue;
     margin-top: -12px;
   }
-  p{
+  p {
     margin: 0;
   }
-  .hash{
+  .hash {
     margin: 5px 0;
-    p{
+    p {
       margin-right: 10px;
-      background:rgb(235, 249, 253);
+      background: rgb(235, 249, 253);
       border-radius: 5px;
       padding: 3px;
     }
