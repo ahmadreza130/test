@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-import { Button, Input } from "../components/UI/StyledComponents";
 import { SetUserContext, UserContext } from "../Store";
 import { useNavigate, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -35,7 +34,8 @@ const Login: React.FC = () => {
       <form>
         <h3 className="mb-5">ورود</h3>
         <br />
-        <Input
+        <input
+        className="inpt"
           placeholder="Email"
           type="email"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -43,7 +43,8 @@ const Login: React.FC = () => {
           }
         />
         <br/>
-        <Input
+        <input
+        className="inpt"
           placeholder="password"
           type="password"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
@@ -51,13 +52,13 @@ const Login: React.FC = () => {
           }
         />
          <br/>
-        <Button className=" border-0 text-white" onClick={checkLogin}> ورود</Button>
+        <button className=" but border-0 text-white" onClick={checkLogin}> ورود</button>
         <br/>
         عضو نیستم
         <br/>
-        <Button className="bg-white">
+        <button  className=" but bg-white ">
           <Link className="lnk" to="/signup">ثبت نام</Link>
-        </Button>
+        </button>
       </form>
     </div>
   );
