@@ -19,19 +19,23 @@ const SendPost = () => {
     }
   };
   return (
-    <div>
+    <div className="col-lg-6 ">
       <div id="sendPostDiv">
-        <h6>{user.email}</h6>
+        <div id="head">
+          <h6>{user.email}</h6>
+          <br />
+          <input
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setPost({ ...post, text: e.target.value })
+            }
+            type="text"
+            placeholder="&#9997; چیزی بنویس ..."
+          />
+        </div>
 
-        <br />
-        <input
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            setPost({ ...post, text: e.target.value })
-          }
-          type="text"
-          placeholder="&#9997; چیزی بنویس ..."
-        />
         <div id="butDiv">
+        <button onClick={send}>ارسال</button>
+
           <label id="fileInput">
             <input
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,8 +48,6 @@ const SendPost = () => {
             />
             <AiFillPicture /> photo
           </label>
-
-          <button onClick={send}>ارسال</button>
         </div>
       </div>
     </div>

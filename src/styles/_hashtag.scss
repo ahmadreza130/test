@@ -1,0 +1,33 @@
+#hashtag {
+    background: white;
+  
+    padding: 20px;
+    border-radius: 20px;
+    button {
+      background: none;
+      border: none;
+      color: $lightBlue;
+      margin-top: -12px;
+    }
+    #head {
+      display: flex;
+      button {
+        margin: 0;
+        margin-right: 50px;
+      }
+      
+    }
+    p {
+      margin: 0;
+      float: right;
+    }
+    .hash {
+      margin: 5px 0;
+      p {
+        margin-right: 10px;
+        background: rgb(235, 249, 253);
+        border-radius: 5px;
+        padding: 3px;
+      }
+    }
+  }

@@ -1,0 +1,26 @@
+#logoutdiv {
+    background-color: white;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(231, 228, 228, 0.383) 40%,
+        rgb(255, 255, 255) 40%
+      ),
+      url("../assets/test3.jpg");
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+  
+    img {
+      @extend .profile;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    button {
+      margin: 0;
+      color: $lightBlue;
+      background: none;
+      border: none;
+    }
+  }

@@ -1,0 +1,27 @@
+@import "./_More.scss";
+@import "./_hashtag.scss";
+@import "./_login-sign.scss";
+@import "./_logout.scss";
+@import "./_sendPostDiv.scss";
+@import "./_post.scss";
+$lightBlue: rgb(37, 150, 190);
+
+.body {
+  background-color: rgb(59, 187, 138);
+}
+.profile {
+  width: 50;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 15px;
+  
+}
+#firstRow {
+  margin-top: 50px;
+  margin-left: 185px;
+  width: 80%;
+}
+#secondRow {
+  margin-left: 520px;
+  width: 80%;
+}

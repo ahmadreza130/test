@@ -1,0 +1,28 @@
+
+$lightBlue: rgb(37, 150, 190);
+
+#more {
+    float: right;
+    text-align: center;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    padding-bottom: 0;
+    height: fit-content;
+    width: fit-content;
+    img {
+      @extend .profile;
+    }
+  
+    button {
+      position: relative;
+      color: $lightBlue;
+      border: 1px solid $lightBlue;
+      background: white;
+      border-radius: 5px;
+      height: fit-content;
+    }
+    #butbut {
+      border: none;
+    }
+  }

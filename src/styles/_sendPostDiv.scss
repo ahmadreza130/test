@@ -1,0 +1,49 @@
+#sendPostDiv {
+    border-radius: 20px;
+    padding: 30px;
+    padding-bottom: 10px;
+  
+    background: linear-gradient(to top, rgb(235, 249, 253) 38%, white 38%);
+    #head {
+      float: right;
+    }
+    h6 {
+      float: right;
+    }
+    #butDiv {
+      width: 100%;
+      height: 80px;
+  
+      margin-top: 50px;
+      background: none;
+    }
+    input {
+      float: right;
+    }
+    input[type="text"] {
+      border: none;
+      direction: rtl;
+      float: right;
+    }
+  
+    label {
+      margin-top: 45px;
+      float: right;
+      position: relative;
+      left: 250px;
+      input {
+        display: none;
+      }
+    }
+    button {
+      border: 1px solid;
+      border-color: $lightBlue;
+      border-radius: 10px;
+      margin-right: 30px;
+      background: white;
+      color: $lightBlue;
+      height: 40px;
+      width: 70px;
+      margin-top: 35px;
+    }
+  }
